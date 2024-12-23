@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Hight</title>
+    <style>
+        body{
+            margin: 150px;
+        }
+        @keyframes ping-pong {
+            from{
+                left: 0px;  
+            }
+
+            to{
+                left: 600px;
+            }
+        }
+        @keyframes big-ball {
+            0%{
+                top: 0px;
+               left: 0px;
+            }
+            25%{
+               top: 300px;
+               left: 260px;
+               background-color:tomato;
+            }
+            50%{
+                top:0px;
+                left: 450px;
+
+            }
+            100%{
+                top: 300px;
+                left: 600px;
+                background-color:rgb(114, 218, 23); 
+            }
+           
+        }
+
+        .filed{
+            width: 700px;
+            height: 400px;
+            background-color: antiquewhite;
+            border: 2px solid tomato;
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(60, 22, 230);
+            border-radius: 50%;
+            position: relative;
+            animation: big-ball  3s  ease-out 0s  infinite alternate ;
+        }
+    </style>
+</head>
+<body>
+    <div class="filed">
+       <div class="ball"></div>
+    </div>
+</body>
+</html>

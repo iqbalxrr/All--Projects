@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Html</title>
+    <style>
+         body{
+            margin-left: 150px;
+         }
+        .box{
+        width: 150px ;
+        height: 150px;
+        border: 2px solid tomato;
+        background-color: green;
+        <!-- transition-property: width;
+        transition-duration: 2s;
+        transition-timing-function: linear;
+        transition-timing-function: ease ease-in ease-in-out ease-out;
+        transition-delay: 1s ; -->
+        
+        transition: transform 1s;
+        <!-- transition: width 3s linear 2s, background-color ease-in-out 2s; -->
+        }
+         .box:hover{
+          transform: scale(1.5 ) translate(150px);
+
+            <!-- width:600px;
+            background-color: aquamarine; -->
+           
+         }
+       
+    </style>
+</head>
+<body>
+    <li>transform : change the shape.
+        this a css styles property name
+    </li>
+    <li>translate: it is a valu of the transform.this means it contains valu X , Y ans Z </li>
+    <li>Transition: how log it will take to do the change of the shape or color  </li>
+
+    <div class="box">box-1</div>
+    <div class="box">box-2</div>
+    <div class="box">box-3</div>
+</body>
+</html>
